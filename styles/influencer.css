@@ -1,4 +1,280 @@
 /*---------------- common styles --------------*/
+* {
+    margin: 0;
+}
+
 body {
     font-family: "Poppins", sans-serif;
+}
+
+/*--------- header style ------- */
+header {
+
+    margin: 0 120px;
+    margin-top: 70px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 34px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.influencer-banner-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.influencer-banner-content {
+    margin-top: 140px;
+    padding-right: 133px;
+
+}
+
+.banner-title {
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.banner-description {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.btn-primary {
+    border-radius: 41px;
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 20px;
+    border: 0;
+}
+
+.influencer-banner-img img {
+    width: 100%;
+    margin-top: 80px;
+    background-image: url(../images/Circle\ design.svg);
+    background-size: cover;
+}
+
+
+
+/*------------- main styles ------------ */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*----------- logos styles----------- */
+.logos-content {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.logos-content img {
+    width: 60px;
+}
+
+/* product-collections style  */
+.product-collection-container {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+#popular-card {
+    text-align: center;
+}
+
+.product-collection-title {
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.product-collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 195px 50px 195px;
+}
+
+.product-collections-card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+
+
+}
+
+.product-collections-card .product-collection-title {
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.product-collection-ammount {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+.fa-star {
+    width: 10px;
+    color: #FB8200;
+}
+
+.product-collection-description {
+    color: #787885;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 3px;
+    margin-bottom: 17px;
+}
+
+a {
+    margin-right: 5px;
+}
+
+.see-more {
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    text-align: end;
+    margin-right: 195px;
+    margin-top: 50px;
+}
+
+/* features section styles */
+.features-container {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    margin-right: 165px;
+    margin-left: 165px;
+}
+
+.features-title {
+    color: #0A0826;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.features-description {
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn-secondery {
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 20px;
+    border: 0;
+    margin-top: 16px;
+
+
+}
+
+/* footer styles  */
+footer {
+    background: #0A0826;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 50px;
+    margin-bottom: 3px;
+}
+
+.footer-description {
+    color: #D9DBE1;
+    font-size: 0.85;
+    font-weight: 700;
+
+}
+
+.icon {
+    color: #FFF;
+    margin-right: 16px;
+    margin-bottom: 50px;
+    margin-top: 16px;
+}
+
+/*----------- media query responsive ------------ */
+@media screen and (max-width:576px) {
+
+    nav,
+    nav>ul {
+        flex-direction: column;
+    }
+
+    .influencer-banner-container,
+    .features-container {
+        flex-direction: column-reverse;
+
+    }
+
+    .influencer-banner-content,
+    .logos-content,
+    .features-container {
+        margin: 0;
+    }
+
+    .logos-content {
+        flex-wrap: wrap;
+    }
+
+    .product-collections {
+        grid-template-columns: 1fr;
+    }
+
+    .product-collections {
+        margin-left: 30px;
+    }
+
+    .features-content {
+        margin-left: 20px;
+    }
+
+
 }
